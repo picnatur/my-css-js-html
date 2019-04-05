@@ -1,0 +1,939 @@
+/* 
+-----------------------------------------------
+Blogger Template Style
+Name:        Dyna
+Author :     http://www.omtemplates.com
+License:     Free Version
+----------------------------------------------- */
+/* ######## Reset Css ######################### */
+.section {
+margin:0;
+}
+.widget {
+margin:0;
+}
+ul, li, ol, p {
+padding:0;
+margin:0;
+}
+.navbar, .Attribution, h2.date-header, h4.date-header, .feed-links {
+height:0 !important;
+opacity:0;
+display:none;
+visibility:hidden;
+}
+img {
+max-width:100%;
+vertical:align:middle;
+}
+a {
+    text-decoration: none;
+    color: #0be6af;
+}
+
+
+
+
+/* ######## Body Css ######################### */
+
+body { 
+  background:#eee;
+font-family: 'Open Sans', sans-serif;
+}
+.widget ul {
+padding:0px;
+margin:0px;
+}
+.quickedit {
+    cursor: pointer;
+    display: none;
+}
+a.home-link {
+    display: none;
+}
+#blog-pager-older-link a, #blog-pager-newer-link a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+}
+#blog-pager {
+    margin:0px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#blog-pager-older-link a:after {
+    content: "\f178";
+    font-size: 13px;
+    margin-left: 5px;
+    color: #555555;
+    font-family: fontawesome;
+}
+#blog-pager-newer-link a:before {
+    content: "\f177";
+    font-size: 13px;
+    margin-right: 5px;
+    color: #555555;
+    font-family: fontawesome;
+}
+
+
+
+input.gsc-search-button {
+    margin-left: 2px;
+    padding: 6px;
+}
+input.gsc-input {
+    padding: 8px 5px;
+    border: 1px solid #ddd;
+    width: 99%;
+}
+.descriptionwrapper {
+    margin-top: -24px;
+}
+.Header .description {
+    margin: .5em 0 10px;
+    padding: 0 2px;
+    padding-top: 0;
+    font: normal normal 13px Domine,Arial,Helvetica,Sans-serif;
+    line-height: 1;
+}
+
+p.description {
+    color: #555555;
+}
+
+/* ######## Main-Header Css ######################### */
+
+#header-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    overflow:hidden;
+    background: #e0e0e0;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+    border-top: 1px solid #a8a8a8;
+}
+.header {
+    display: inline-block;
+    float: left;
+}
+.header-logo {
+    float: right;
+}
+
+.Header h1 {
+    font-family: 'New Rocker', cursive;
+    padding: 20px 0px;
+    font-size: 30px;
+    margin:0px;
+    letter-spacing: 1px;
+}
+
+
+/* ######## Menu Css ######################### */
+
+
+#menu-so {
+    padding-right: 10px;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+    background-image: linear-gradient(107deg,#333333,#205081);
+    height: 44px;
+}
+
+    
+#menu {
+    color: #FFF;
+    display:inline-block;
+    margin: 0 auto;
+    height: 44px;
+}
+
+#menu ul,#menu li{margin:0 auto;padding:0 0;list-style:none}      
+#menu ul {
+    height: 44px;
+    display: inline-block;
+}     
+#menu li{float:left;height: 44px;display:inline;position:relative;font:bold 0.9em Arial;}      
+#menu a{
+color: #ffffff;
+letter-spacing: 0.6px;
+text-transform: uppercase;
+display: block;    
+border-right: 1px solid #222222;
+line-height:44px;      
+padding: 12px 12px;      
+text-decoration: none; 
+font: normal normal 13px Oswald,Arial,Helvetica,sans-serif;
+}
+    
+     
+#menu li a:hover{ 
+ background:#205081;           
+-webkit-transition: all .1s ease-in-out;      
+-moz-transition: all .1s ease-in-out;      
+-ms-transition: all .1s ease-in-out;      
+-o-transition: all .1s ease-in-out;      
+transition: all .1s ease-in-out;           
+}      
+#menu input{display:none;margin:0 0;padding:0 0;width:80px;height:55px;opacity:0;cursor:pointer}      
+#menu label{font:bold 30px Arial;display:none;width:45px;height:55px;line-height:55px;text-align:center}      
+#menu label span{font-size:16px;position:absolute;left:35px}      
+
+#menu ul li ul{      
+height: auto;        
+background-color: #333333;  
+width: 180px;  
+left:0px;       
+position: absolute;      
+z-index: 99;   
+display:none;        
+}
+#menu ul li ul li ul { 
+top:0px;
+left:180px;        
+position: absolute;      
+z-index: 99;
+visibility:hidden;
+}
+  
+#menu ul.menus li{      
+width: 100%;      
+font:normal 0.8em Arial;      
+text-transform: none;      
+text-shadow: none;          
+ }     
+#menu ul.menus a{      
+color: #fff;          
+}      
+#menu ul > li:hover ul{
+display:block;
+}
+#menu ul > li > ul > li:hover ul{
+display:block;
+visibility:visible;
+}
+    
+#menu ul.menus a:hover{     
+ background:#205081;      
+color: #fff;      
+-webkit-transition: all .1s ease-in-out;      
+-moz-transition: all .1s ease-in-out;      
+-ms-transition: all .1s ease-in-out;      
+-o-transition: all .1s ease-in-out;      
+transition: all .1s ease-in-out;      
+ }
+
+
+
+
+
+.social {
+    display:inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float:right;
+}
+.social ul li {
+list-style-type:none;
+display:inline-block;
+}
+.social ul li a {
+    display: inline-block;
+    padding: 14px 4px;
+    font-size: 14px;
+    color: #fff;
+}
+.social ul li a:hover {
+
+}
+
+#content-wrap {
+    width: 1150px;
+    margin: 0 auto;
+    background: #fff url(https://themesdna.com/demo/easywp/wp-content/themes/easywp/images/easywp-content-wrapper.png) repeat-y scroll top left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+.main-post {
+    width: 660px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 0 0 235px; 
+}
+h2.post-title.entry-title a,h1.post-title.entry-title {
+    text-align:center;
+    color: #333;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font: normal bold 24px 'Playfair Display',sans-serif;
+    line-height: 1.3;
+}
+h2.post-title.entry-title,h1.post-title.entry-title {
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+.block-image {
+    width: 300px;
+    height: 265px;
+    float: left;
+    margin-right: 10px;
+}
+.thumb img {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+}
+.post {
+    box-sizing: border-box;
+    margin-bottom:15px;
+    border-bottom: 1px dotted #ddd;
+    padding: 0 10px 10px;
+    display:inline-block;
+}
+.item .post-summary p {
+color: #555555;
+font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+line-height: 1.6;
+text-align:center;
+}
+.index .post-summary p {
+color: #555555;
+font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+line-height: 1.6;
+}
+.label {
+    display: none;
+}
+.post-body {
+    width: 100%;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    color: #555555;
+    line-height: 1.6;
+    _overflow: hidden;
+}
+a.read-more {
+    color: #fff;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    background-image: linear-gradient(107deg,#333333,#205081);
+    padding: 8px 14px;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.read-text {
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.post-footer {
+    display: none;
+}
+.index .comment-post {
+    display:none;
+}
+.item .comment-post {
+display:inline-block;
+}
+.index .meta-post {
+    line-height: 1.384;
+    padding: 0 0 10px;
+}
+.item .meta-post {
+    line-height: 1.384;
+    padding: 0 0 10px;
+    text-align:center;
+}
+abbr.published {
+    text-decoration: none;
+}
+.meta-post p {
+    display: inline-block;
+    margin-right: 4px;
+}
+.meta-post a,.meta-post p {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    color: #555555;
+    line-height: 1.6;
+}
+.meta-date:before {
+    content: "\f073";
+    font-size:13px;
+    color: #555555;
+    font-family:fontawesome;
+}
+.meta-author:before {
+    color: #555555;
+    font-size:13px;
+    content: "\f007";
+    font-family:fontawesome;
+}
+.comment-post:before {
+    color: #555555;
+    font-size:13px;
+    content: "\f086";
+    font-family:fontawesome;
+}
+span.meta-author {
+    margin: 0 8px;
+}
+.label {
+    margin-top: 10px;
+}
+.label p {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    color: #555555;
+    margin-right: 4px;
+    line-height: 1.6;
+    display: inline-block;
+}
+.label a,.comments-content p {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    color: #555555;
+    line-height: 1.6;
+}
+.post-labels:before {
+    font-size:13px;
+    display:none;
+    color: #555555;
+    font-family:fontawesome;
+    content: "\f07c";
+}
+.label a:hover {
+color:#000;
+}
+.meta-post a:hover {
+color:#000;
+}
+/* ######## Sidebar Css ######################### */
+
+
+.left-sidebar {
+    width: 235px;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+    margin: 0 0 0 -895px;
+    float: left;
+}
+.left-sidebar .widget {
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #444444;
+}
+.left-sidebar h2 {
+    border-bottom: 3px solid #205081;
+    margin: 0 0 10px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    background-image: linear-gradient(107deg,#333333,#205081);
+    color: #fff;
+    font: normal normal 15px Oswald,Arial,Helvetica,sans-serif;
+    line-height: 0.5;
+    text-decoration: none;
+    text-align:center;
+    text-transform: none;
+}
+.widget ul li {
+    padding: 0 0 6px 0;
+    margin: 0 0 2px;
+}
+.text p {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #444444;
+    margin-bottom: .7em;
+}
+.LinkList ul li {
+    list-style-type: none;
+    padding: 0 0 6px 0;
+    margin: 0 0 6px;
+}
+.LinkList a {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #444444;
+}
+#BlogArchive1_ArchiveMenu {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.right-sidebar {
+    box-sizing: border-box;
+    width: 235px;
+    padding: 0 0 0 10px;
+    float: right;
+}
+.right-sidebar .widget {
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #444444;
+}
+.right-sidebar h2 {
+    border-bottom: 3px solid #205081;
+    text-align:center;
+    margin: 0 0 10px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    background-image: linear-gradient(107deg,#333333,#205081);
+    color: #fff;
+    font: normal normal 15px Oswald,Arial,Helvetica,sans-serif;
+    line-height: 0.5;
+    text-decoration: none;
+    text-transform: none;
+}
+.PopularPosts ul li a {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #444444;
+font-weight:bold;
+}
+.PopularPosts ul li a:hover {
+color:#000;
+}
+.left-sidebar .PopularPosts ul li, .right-sidebar .PopularPosts ul li {
+font-size:11px;
+line-height: 1.4;
+}
+.tt a:hover {
+color:#000;
+}
+.label-size a:hover {
+background:#333333;
+color:#fff;
+}
+.label-size {
+    line-height: 1.2;
+    font-size: 0px;
+    float:left;
+    opacity: 1;
+}
+.label-size a {
+    opacity: 1.8;
+    display: inline-block;
+    color: #666 !important;
+    background: #f6f6f6 !important;
+    border: 1px solid #cccccc;
+    font-size: 13px !important;
+    padding: 3px 5px;
+    margin: 0 8px 8px 0;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+    text-shadow: none !important;
+}
+.right-sidebar ul li {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #444444;
+    list-style-type: none;
+}
+.right-sidebar dd {
+    margin: 0 1.5em 1.5em;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #444444;
+    list-style-type: none;
+}
+.right-sidebar dt {
+    font-weight: 700;
+    color: #444444;
+    font-size: 13px;
+    font-family: 'Domine', serif;
+}
+.widget-content p {
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* ######## Lower-Footer Css ######################### */
+
+
+#lower-footer {
+    padding: 20px 15px;
+    width: 1150px;
+    background: #e0e0e0;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+    border-top: 1px solid #a8a8a8;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#lower-footer h2 {
+    border-bottom: 3px solid #205081;
+    text-align: center;
+    margin: 0 0 10px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    background-image: linear-gradient(107deg,#333333,#205081);
+    color: #fff;
+    font: normal normal 15px Oswald,Arial,Helvetica,sans-serif;
+    line-height: 0.5;
+    text-decoration: none;
+    text-transform: none;
+}
+.footer {
+    width: 23.5%;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+.footer:last-child {
+margin:0px;
+padding:0px;
+}
+.footer .PopularPosts ul li {
+list-style-type: none;
+padding:4px;
+}
+.PopularPosts .widget-content ul li {
+    padding: 0 0 6px 0;
+    margin: 0 0 6px;
+}
+
+
+
+/* ########Credit-Footer Css ######################### */
+
+
+#credit-footer {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    background: #333333;
+}
+#credit-footer .copyright p,#credit-footer a {
+font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+line-height: 1.6;
+color:#fff;
+}
+
+
+#outer-wrap {
+    width: 1150px;
+    margin: 10px auto;
+}
+
+/* ######## Comment Css ######################### */
+
+
+.comments .comments-content .user {
+    font-style: normal;
+    display: -webkit-box;
+    font-weight: bold;
+}
+.comments .comments-content .user a {
+font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+line-height: 1.6;
+color: #555555;
+font-weight: 700;
+}
+.comments .comments-content .comment:last-child {
+    border: 1px solid #eaeaea;
+    margin: 12px 12px 20px 12px;
+    padding: 15px;
+    background: #f5f5f5; 
+}
+.comments .comments-content .comment:first-child {
+    border: 1px solid #eaeaea;
+    margin: 12px 12px 20px 12px;
+    padding: 15px;
+    background: #f5f5f5;
+}
+.comments .comments-content .icon.blog-author {
+    display: none;
+    margin: 0px;
+}
+.comments .comments-content .datetime a {
+    margin-left: 0;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+.comments .comments-content .datetime {
+margin:0px;
+}
+.comments .comment-block {
+    margin-left: 0px;
+    position: relative;
+}
+.comments .avatar-image-container {
+    float: left;
+    max-height: 36px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 36px;
+}
+span.blog-admin, span.pid-353262945 {
+    display: inline;
+    float: right;
+}
+.comments .comment .comment-actions a {
+    padding-right: 5px;
+    font: normal normal 14px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    font-style: italic;
+    color: #444;
+    text-decoration: none;
+    outline: none;
+    padding-top: 5px;
+}
+.comments .comment .comment-actions a:hover {
+color:#000000;
+text-decoration:none;
+}
+
+#comments h4 {
+    color: #444;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    padding: 0em 1em;
+    text-transform:uppercase;
+    text-decoration: none;
+    outline: none;
+}
+    color: #444;
+    font: normal normal 13px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    outline: none;
+}
+.comments .comments-content .comment-replies {
+    margin-left: 0px;
+    margin-top: 0em;
+}
+.comments .continue a {
+    bottom: 52px;
+    padding-left: 28px;
+    position: relative;
+    font: normal normal 14px Domine, Arial, Helvetica, Sans-serif;
+    line-height: 1.6;
+    font-style: italic;
+    color: #444;
+    display: inline-block;
+    font-size: 14px;
+}
+.comments .comments-content .comment {
+    margin-bottom: 16px;
+    border: 1px solid #eaeaea;
+    margin: 12px 12px 20px 12px;
+    padding: 15px;
+    background: #f5f5f5;
+    padding-bottom: 8px;
+}
+
+
+/* ######## 404-page Css ######################### */
+
+
+
+body.error_page .left-sidebar,body.error_page  .right-sidebar {
+display:none;
+}
+body.error_page .main-post {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+}      
+.status-msg-wrap {
+    font-size: 100%;
+    margin: none;
+    position: static;
+    width: 100%;
+}
+.status-msg-border {
+    display:none
+}
+.status-msg-body {
+    padding: none;
+    position: static;
+    text-align: inherit;
+    width: 100%;
+    z-index: auto;
+}
+.status-msg-wrap a {
+    padding: none;
+    text-decoration: inherit;
+}
+.BB-404-box {
+  background:#FFFFFF;
+  width:98%;
+  margin:10px 0px;
+  padding:20px 10px;
+  border:1px solid #ddd;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  box-shadow: 5px 5px 5px #CCCCCC;
+}
+
+
+/* ######## Social Sharing Widget By Sorabloggingtips.com ######################### */
+.share-box {
+position: relative;
+padding: 15px 10px;
+}
+.share-title {
+border-bottom: 2px solid #777;
+color: #010101;
+display: inline-block;
+padding-bottom: 7px;
+font-size: 15px;
+font-weight: 500;
+position: relative;
+top: 2px;
+}
+.share-art {
+float: right;
+padding: 0;
+padding-top: 0;
+font-size: 13px;
+font-weight: 400;
+text-transform: capitalize;
+}
+.share-art a {
+color: #fff;
+padding: 3px 8px;
+margin-left: 4px;
+border-radius: 2px;
+display: inline-block;
+margin-right: 0;
+background: #010101;
+}
+.share-art a:hover{color:#fff}
+.share-art .fac-art{background:#3b5998}
+.share-art .fac-art:hover{background:rgba(49,77,145,0.7)}
+.share-art .twi-art{background:#00acee}
+.share-art .twi-art:hover{background:rgba(7,190,237,0.7)}
+.share-art .goo-art{background:#db4a39}
+.share-art .goo-art:hover{background:rgba(221,75,56,0.7)}
+.share-art .pin-art{background:#CA2127}
+.share-art .pin-art:hover{background:rgba(202,33,39,0.7)}
+.share-art .lin-art{background:#0077B5}
+.share-art .lin-art:hover{background:rgba(0,119,181,0.7)}
+
+
+
+/* ######## Navigation Menu Css by sorabloggingtips.com ######################### */
+.mapasite {
+    margin-bottom: 10px;
+    background-color: #F8F8F8
+}
+.mapasite.active .mapa {
+    display: block
+}
+.mapasite .mapa {
+    display: none
+}
+.mapasite h2 {
+    background-color: #EEE;
+    color: #000;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 700
+}
+.mapasite h2 .botao {
+    font-size: 18px;
+    line-height: 1.2em
+}
+.botao .fa-minus-circle {
+    color: #f30
+}
+.mapapost {
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 70px;
+    background-color: #FFF
+}
+.mapa {
+    padding: 40px
+}
+.map-thumb {
+    background-color: #F0F0F0;
+    padding: 10px;
+    display: block;
+    width: 65px;
+    height: 50px;
+    float: left
+}
+.map-img {
+    width: 65px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 2px
+}
+.map-thumb a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all .3s ease-out!important;
+    -webkit-transition: all .3s ease-out!important;
+    -moz-transition: all .3s ease-out!important;
+    -o-transition: all .3s ease-out!important
+}
+.map-thumb a:hover {
+    -webkit-transform: scale(1.1) rotate(-1.5deg)!important;
+    -moz-transform: scale(1.1) rotate(-1.5deg)!important;
+    transform: scale(1.1) rotate(-1.5deg)!important;
+    transition: all .3s ease-out!important;
+    -webkit-transition: all .3s ease-out!important;
+    -moz-transition: all .3s ease-out!important;
+    -o-transition: all .3s ease-out!important
+}
+.mapapost .wrp-titulo {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3em;
+    padding-left: 25px;
+    padding-right: 10px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px
+}
+.mapapost .wrp-titulo a {
+    
+}
+.mapapost .wrp-titulo a:hover {
+    color: #f30;
+    text-decoration: underline
+}
+.map-meta {
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding-left: 25px;
+}
+.mapasite h2 .botao {
+    float: right
+}
+
