@@ -5086,3 +5086,73 @@ position: relative;
 .mapasite h2 .botao {
     float: right
 }
+
+
+/* CSS Contact */
+ #ContactForm1,#ContactForm1 br{
+    display:none;
+}
+#ContactForm1_contact-form-name, #ContactForm1_contact-form-email {
+    width: 50%;
+    height: auto;
+    margin: 5px auto;
+    padding: 10px;
+    background: #1281aa;
+    color: #444;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+}
+ #ContactForm1_contact-form-email-message {
+    width: 450px;
+    height: 175px;
+    margin: 5px 0;
+    padding: 10px;
+    background: #1281aa;
+    color: #444;
+    font-family: &#39;
+    Open Sans&#39: ;
+    ,sans-serif: ;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+}
+ #ContactForm1_contact-form-name:focus, #ContactForm1_contact-form-email:focus, #ContactForm1_contact-form-email-message:focus{
+    outline:none;
+    background:#fff;
+    color:#666;
+    border-color:rgba(81,203,238,1);
+    box-shadow:0 0 5px rgba(81,203,238,0.7);
+}
+ #ContactForm1_contact-form-submit {
+    font-family: 'Noto Kufi Arabic';
+    float: right;
+    background: #f3f3f3;
+    color: #aaa;
+    margin: 10px auto;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px 18px!important;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 4rem;
+    background-image: linear-gradient(-95deg, #1281aa 0%, #f53b3b 50%, transparent 50%, transparent 100%);
+    background-size: 200%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: background-position .4s ease, color .4s ease;
+    height: initial;
+    line-height: initial;
+}
+ #ContactForm1_contact-form-submit:hover {
+    color:#fff;
+    background-position:100% 0;
+}
+ #ContactForm1_contact-form-error-message, #ContactForm1_contact-form-success-message{
+     width:450px;
+    margin-top:35px;
+}
