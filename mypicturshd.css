@@ -1,0 +1,585 @@
+/*-----------------------------------------------
+
+Blogger Template Style
+Name:     Picture Window
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   <Variable name="keycolor" description="Main Color" type="color" default="#1a222a" value="#1a2a2a"/>
+   <Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="$(color) none no-repeat scroll center center"/>
+
+   <Group description="Page Text" selector="body">
+     <Variable name="body.font" description="Font" type="font"
+         default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
+   </Group>
+
+   <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#296695" value="#111111"/>
+     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="rgba(0, 0, 0, 0)"/>
+     <Variable name="post.background.color" description="Post Background" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Links" selector=".main-outer">
+     <Variable name="link.color" description="Link Color" type="color" default="#336699" value="#10ff00"/>
+     <Variable name="link.visited.color" description="Visited Color" type="color" default="#6699cc" value="#10ff00"/>
+     <Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#32ffed"/>
+   </Group>
+
+   <Group description="Blog Title" selector=".header h1">
+     <Variable name="header.font" description="Title Font" type="font"
+         default="normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 36px Chewy"/>
+     <Variable name="header.text.color" description="Text Color" type="color" default="#ffffff"  value="#10ff00"/>
+   </Group>
+
+   <Group description="Tabs Text" selector=".tabs-inner .widget li a">
+     <Variable name="tabs.font" description="Font" type="font"
+         default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff" value="#10ff00"/>
+     <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="$(link.color)" value="#336699"/>
+   </Group>
+
+   <Group description="Tabs Background" selector=".tabs-outer .PageList">
+     <Variable name="tabs.background.color" description="Background Color" type="color" default="transparent" value="#aaaaaa"/>
+     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent" value="rgba(0, 0, 0, 0)"/>
+     <Variable name="tabs.separator.color" description="Separator Color" type="color" default="transparent" value="rgba(0, 0, 0, 0)"/>
+   </Group>
+
+   <Group description="Post Title" selector="h1.post-title, .comments h4">
+     <Variable name="post.title.font" description="Title Font" type="font"
+         default="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+   </Group>
+
+   <Group description="Date Header" selector=".date-header">
+     <Variable name="date.header.color" description="Text Color" type="color" default="$(body.text.color)" value="#333333"/>
+   </Group>
+
+   <Group description="Post" selector=".post">
+     <Variable name="post.footer.text.color" description="Footer Text Color" type="color" default="#999999" value="#999999"/>
+     <Variable name="post.border.color" description="Border Color" type="color" default="#dddddd" value="#dddddd"/>
+   </Group>
+
+   <Group description="Gadgets" selector="h2">
+     <Variable name="widget.title.font" description="Title Font" type="font"
+        default="bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#888888" value="#888888"/>
+   </Group>
+
+   <Group description="Footer" selector=".footer-outer">
+     <Variable name="footer.text.color" description="Text Color" type="color" default="#cccccc" value="#cccccc"/>
+     <Variable name="footer.widget.title.text.color" description="Gadget Title Color" type="color" default="#aaaaaa" value="#aaaaaa"/>
+   </Group>
+
+   <Group description="Footer Links" selector=".footer-outer">
+     <Variable name="footer.link.color" description="Link Color" type="color" default="#99ccee" value="#98eee5"/>
+     <Variable name="footer.link.visited.color" description="Visited Color" type="color" default="#77aaee" value="#77e5ee"/>
+     <Variable name="footer.link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#32ffed"/>
+   </Group>
+
+   <Variable name="content.margin" description="Content Margin Top" type="length" default="20px" min="0" max="100px" value="20px"/>
+   <Variable name="content.padding" description="Content Padding" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="content.background" description="Content Background" type="background"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
+   <Variable name="content.border.radius" description="Content Border Radius" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="0" min="0" max="100px" value="0"/>
+
+   <Variable name="header.padding" description="Header Padding" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="header.background.gradient" description="Header Gradient" type="url"
+       default="none" value="none"/>
+   <Variable name="header.border.radius" description="Header Border Radius" type="length" default="0" min="0" max="100px" value="0"/>
+
+   <Variable name="main.border.radius.top" description="Main Border Radius" type="length" default="20px" min="0" max="100px" value="20px"/>
+   <Variable name="footer.border.radius.top" description="Footer Border Radius Top" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="footer.border.radius.bottom" description="Footer Border Radius Bottom" type="length" default="20px" min="0" max="100px" value="20px"/>
+   <Variable name="region.shadow.spread" description="Main and Footer Shadow Spread" type="length" default="3px" min="0" max="100px" value="3px"/>
+   <Variable name="region.shadow.offset" description="Main and Footer Shadow Offset" type="length" default="1px" min="-50px" max="50px" value="1px"/>
+
+   <Variable name="tabs.background.gradient" description="Tab Background Gradient" type="url" default="none" value="none"/>
+   <Variable name="tab.selected.background.gradient" description="Selected Tab Background" type="url"
+       default="url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png)" value="url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png)"/>
+   <Variable name="tab.background" description="Tab Background" type="background"
+       default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left" value="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left"/>
+
+   <Variable name="tab.border.radius" description="Tab Border Radius" type="length" default="10px" min="0" max="100px" value="10px"/>
+   <Variable name="tab.first.border.radius" description="First Tab Border Radius" type="length" default="10px" min="0" max="100px" value="10px"/>
+   <Variable name="tabs.border.radius" description="Tabs Border Radius" type="length" default="0" min="0" max="100px" value="0"/>
+
+   <Variable name="tabs.spacing" description="Tab Spacing" type="length" default=".25em" min="0" max="10em" value=".25em"/>
+   <Variable name="tabs.margin.bottom" description="Tab Margin Bottom" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="tabs.margin.sides" description="Tab Margin Sides" type="length" default="20px" min="0" max="100px" value="20px"/>
+
+   <Variable name="main.background" description="Main Background" type="background"
+       default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left" value="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left"/>
+   <Variable name="main.padding.sides" description="Main Padding Sides" type="length" default="20px" min="0" max="100px" value="20px"/>
+
+   <Variable name="footer.background" description="Footer Background" type="background"
+       default="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left" value="transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left"/>
+
+   <Variable name="post.margin.sides" description="Post Margin Sides" type="length" default="-20px" min="-50px" max="50px" value="-20px"/>
+   <Variable name="post.border.radius" description="Post Border Radius" type="length" default="5px" min="0" max="100px" value="5px"/>
+   <Variable name="widget.title.text.transform" description="Widget Title Text Transform" type="string" default="uppercase" value="uppercase"/>
+
+   <Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
+
+   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+
+/* Content
+----------------------------------------------- */
+body {
+  font: $(body.font);
+  color: $(body.text.color);
+  background: $(body.background);
+}
+
+html body .region-inner {
+  min-width: 0;
+  max-width: 100%;
+  width: auto;
+}
+
+.content-outer {
+  font-size: 90%;
+}
+
+a:link {
+  text-decoration:none;
+  color: $(link.color);
+}
+
+a:visited {
+  text-decoration:none;
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration:underline;
+  color: $(link.hover.color);
+}
+
+.content-outer {
+  background: $(content.background);
+
+  -moz-border-radius: $(content.border.radius);
+  -webkit-border-radius: $(content.border.radius);
+  -goog-ms-border-radius: $(content.border.radius);
+  border-radius: $(content.border.radius);
+
+  -moz-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+
+  margin: $(content.margin) auto;
+}
+
+.content-inner {
+  padding: $(content.padding);
+}
+
+/* Header
+----------------------------------------------- */
+.header-outer {
+  background: $(header.background.color) $(header.background.gradient) repeat-x scroll top left;
+  _background-image: none;
+
+  color: $(header.text.color);
+
+  -moz-border-radius: $(header.border.radius);
+  -webkit-border-radius: $(header.border.radius);
+  -goog-ms-border-radius: $(header.border.radius);
+  border-radius: $(header.border.radius);
+}
+
+.Header img, .Header #header-inner {
+  -moz-border-radius: $(header.border.radius);
+  -webkit-border-radius: $(header.border.radius);
+  -goog-ms-border-radius: $(header.border.radius);
+  border-radius: $(header.border.radius);
+}
+
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: $(header.padding);
+  padding-right: $(header.padding);
+}
+
+.Header h1 {
+  font: $(header.font);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 130%;
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+  margin: .5em $(tabs.margin.sides) $(tabs.margin.bottom);
+  padding: 0;
+}
+
+.tabs-inner .section {
+  margin: 0;
+}
+
+.tabs-inner .widget ul {
+  padding: 0;
+
+  background: $(tabs.background.color) $(tabs.background.gradient) repeat scroll bottom;
+
+  -moz-border-radius: $(tabs.border.radius);
+  -webkit-border-radius: $(tabs.border.radius);
+  -goog-ms-border-radius: $(tabs.border.radius);
+  border-radius: $(tabs.border.radius);
+}
+
+.tabs-inner .widget li {
+  border: none;
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+
+  padding: .5em 1em;
+  margin-$endSide: $(tabs.spacing);
+
+  color: $(tabs.text.color);
+  font: $(tabs.font);
+
+  -moz-border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+  -webkit-border-top-left-radius: $(tab.border.radius);
+  -webkit-border-top-right-radius: $(tab.border.radius);
+  -goog-ms-border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+  border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+
+  background: $(tab.background);
+
+  border-$endSide: 1px solid $(tabs.separator.color);
+}
+
+.tabs-inner .widget li:first-child a {
+  padding-$startSide: 1.25em;
+
+  -moz-border-radius-top$startSide: $(tab.first.border.radius);
+  -moz-border-radius-bottom$startSide: $(tabs.border.radius);
+  -webkit-border-top-$startSide-radius: $(tab.first.border.radius);
+  -webkit-border-bottom-$startSide-radius: $(tabs.border.radius);
+  -goog-ms-border-top-$startSide-radius: $(tab.first.border.radius);
+  -goog-ms-border-bottom-$startSide-radius: $(tabs.border.radius);
+  border-top-$startSide-radius: $(tab.first.border.radius);
+  border-bottom-$startSide-radius: $(tabs.border.radius);
+}
+
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+  position: relative;
+  z-index: 1;
+
+  background: $(tabs.selected.background.color) $(tab.selected.background.gradient) repeat scroll bottom;
+  color: $(tabs.selected.text.color);
+
+  -moz-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  text-transform: $(widget.title.text.transform);
+  color: $(widget.title.text.color);
+  margin: .5em 0;
+}
+
+/* Main
+----------------------------------------------- */
+.main-outer {
+  background: $(main.background);
+
+  -moz-border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+  -webkit-border-top-left-radius: $(main.border.radius.top);
+  -webkit-border-top-right-radius: $(main.border.radius.top);
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -goog-ms-border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+  border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+
+  -moz-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+.main-inner {
+  padding: 15px $(main.padding.sides) 20px;
+}
+
+.main-inner .column-center-inner {
+  padding: 0 0;
+}
+
+.main-inner .column-left-inner {
+  padding-left: 0;
+}
+
+.main-inner .column-right-inner {
+  padding-right: 0;
+}
+
+/* Posts
+----------------------------------------------- */
+h1.post-title {
+  margin: 0;
+  font: $(post.title.font);
+}
+
+.comments h4 {
+  margin: 1em 0 0;
+  font: $(post.title.font);
+}
+
+.date-header span {
+  color: $(date.header.color);
+}
+
+.post-outer {
+  background-color: $(post.background.color);
+  border: solid 1px $(post.border.color);
+
+  -moz-border-radius: $(post.border.radius);
+  -webkit-border-radius: $(post.border.radius);
+  border-radius: $(post.border.radius);
+  -goog-ms-border-radius: $(post.border.radius);
+
+  padding: 15px 20px;
+  margin: 0 $(post.margin.sides) 20px;
+}
+
+.post-body {
+  line-height: 1.4;
+  font-size: 110%;
+  position: relative;
+}
+
+.post-header {
+  margin: 0 0 1.5em;
+
+  color: $(post.footer.text.color);
+  line-height: 1.6;
+}
+
+.post-footer {
+  margin: .5em 0 0;
+
+  color: $(post.footer.text.color);
+  line-height: 1.6;
+}
+
+#blog-pager {
+
+    margin: 0em 100px;
+    text-align: center;
+    overflow: hidden;
+  font-size: 300%
+}
+
+#comments .comment-author {
+  padding-top: 1.5em;
+
+  border-top: dashed 1px #ccc;
+  border-top: dashed 1px rgba(128, 128, 128, .5);
+
+  background-position: 0 1.5em;
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+
+.comments .comments-content .loadmore a {
+  border-top: 1px solid $(link.hover.color);
+  border-bottom: 1px solid $(link.hover.color);
+}
+
+.comments .continue {
+  border-top: 2px solid $(link.hover.color);
+}
+
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+  padding: 0;
+  list-style: none;
+}
+
+.widget ul li, .widget #ArchiveList ul.flat li {
+  border-top: dashed 1px #ccc;
+  border-top: dashed 1px rgba(128, 128, 128, .5);
+}
+
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+  border-top: none;
+}
+
+.widget .post-body ul {
+  list-style: disc;
+}
+
+.widget .post-body ul li {
+  border: none;
+}
+
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+  color:$(footer.text.color);
+  background: $(footer.background);
+
+  -moz-border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+  -webkit-border-top-left-radius: $(footer.border.radius.top);
+  -webkit-border-top-right-radius: $(footer.border.radius.top);
+  -webkit-border-bottom-left-radius: $(footer.border.radius.bottom);
+  -webkit-border-bottom-right-radius: $(footer.border.radius.bottom);
+  -goog-ms-border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+  border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+
+  -moz-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+.footer-inner {
+  padding: 10px $(main.padding.sides) 20px;
+}
+
+.footer-outer a {
+  color: $(footer.link.color);
+}
+
+.footer-outer a:visited {
+  color: $(footer.link.visited.color);
+}
+
+.footer-outer a:hover {
+  color: $(footer.link.hover.color);
+}
+
+.footer-outer .widget h2 {
+  color: $(footer.widget.title.text.color);
+}
+
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+  height: auto;
+}
+
+html body.mobile {
+  min-height: 480px;
+  background-size: 100% auto;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+  border-bottom: none;
+  background: $(main.background);
+  margin-bottom: 10px;
+}
+
+.mobile .date-outer {
+  background: $(main.background);
+}
+
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -goog-ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.mobile .content-outer,
+.mobile .main-outer,
+.mobile .post-outer {
+  background: inherit;
+  border: none;
+}
+
+.mobile .content-outer {
+  font-size: 100%;
+}
+
+.mobile-link-button {
+  background-color: $(link.color);
+}
+
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  color: $(post.background.color);
+}
+
+.mobile-index-contents {
+  color: $(body.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content {
+  background: $(tabs.selected.background.color) $(tab.selected.background.gradient) repeat scroll bottom;
+  color: $(tabs.selected.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+  border-$startSide: 1px solid $(tabs.separator.color);
+}
+
+.mobile .column-center-inner img {
+max-width: -webkit-fill-available;
+height: auto;
+}
+
+p.description {
+    display: none;
+}
+.tabs .widget h2 {
+    display: list-item !important;
+    color: #10ff00;
+}
+
+.tabs-inner .widget ul{
+    border-radius: 10px;
+}
+.Header h1 {
+    margin: 0px 0 0 38%;}
+h2.title {
+    font: normal bold 36px Chewy !important;margin: 0px 0 0 38%;
+    text-transform: none;color:#fff !important;
+}
