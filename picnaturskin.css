@@ -85,22 +85,25 @@ margin: 0 auto;
 padding: 20px 0 30px;
 overflow: hidden;
 }
-
+/*
 .item #main-wrapper, .statc_page #main-wrapper {
 float: left;
 width: 68%;
 max-width: 800px;
-}
+}*/
+
 .index #main-wrapper, .archive #main-wrapper {
 float:none;
 width:100%;
 max-width:100%
 }
+/*
 .item #sidebar-wrapper, .statc_page #sidebar-wrapper {
 float: right;
 width: 30%;
 max-width: 330px;
 }
+*/
 .index #sidebar-wrapper, .archive #sidebar-wrapper {
 display:none;
 visibility:hidden;
@@ -3931,12 +3934,13 @@ letter-spacing: 1px;
     display: block;
 }
 .post-body {
+text-align:center;
 margin: 0px;
 padding:10px;
 font-size: 14px;
 line-height: 26px;
 box-sizing:border-box;
-text-align:justify;
+/* text-align:justify; */
 }
 
 .block-image {
