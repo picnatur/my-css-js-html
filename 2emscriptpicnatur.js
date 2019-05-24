@@ -28,7 +28,7 @@ $(document)['ready'](function() {
                             var _0x4a78xf = 'http://1.bp.blogspot.com/-eAeO-DYJDws/Vkqtj4HFBFI/AAAAAAAAB0o/Q5OLsyONXM0/s1600-r/nth.png'
                         }
                     };
-                    _0x4a78x7 += '<li><div class="related-thumb"><a class="related-img" href="' + _0x4a78x6 + '" style="background:url(' + _0x4a78xf + ') no-repeat center center;background-size: cover"/></div><h3 class="related-title"><a href="' + _0x4a78x6 + '">' + _0x4a78xa + '</a></h3></li>'
+                    _0x4a78x7 += '<li><div class="related-thumb"><a class="related-img" href="' + _0x4a78x6 + '" style="background:url(' + _0x4a78xf + ') no-repeat center center;background-size: cover"/></div><h2 class="related-title"><a href="' + _0x4a78x6 + '">' + _0x4a78xa + '</a></h2></li>'
                 };
                 _0x4a78x7 += '</div>', _0x4a78x2['html'](_0x4a78x7)
             }
