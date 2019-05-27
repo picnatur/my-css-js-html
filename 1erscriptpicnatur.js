@@ -339,15 +339,15 @@ $('.comments .avatar-image-container img')['attr']('src', function(_0x62e4x1b, _
 $(document)['ready'](function() {
     setInterval(function() {
         if (!$('#mycontent:visible')['length']) {
-            window['location']['href'] = 'http://www.soratemplates.com/'
+            window['location']['href'] = 'http://www.picnatur.com/'
         }
     }, 3000)
 });
 window['onload'] = function() {
     var _0x62e4xa = document['getElementById']('mycontent');
-    _0x62e4xa['setAttribute']('href', 'http://www.soratemplates.com/');
-    _0x62e4xa['setAttribute']('rel', 'nofollow');
+    _0x62e4xa['setAttribute']('href', 'http://www.picnatur.com/');
+    _0x62e4xa['setAttribute']('rel', 'dofollow');
     _0x62e4xa['setAttribute']('title', 'Free Blogger Templates');
     _0x62e4xa['setAttribute']('style', 'display: inline-block!important; font-size: inherit!important; color: #c0af94!important; visibility: visible!important;z-index:99!important; opacity: 1!important;');
-    _0x62e4xa['innerHTML'] = 'SoraTemplates'
+    _0x62e4xa['innerHTML'] = 'picnaturTemplates'
 }
